@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '1d41b48d2bmsh15048a4308203adp154f9ejsnb167e1a83132';
+    const apiKey = '10c34d7c07msh53b2fa3c58bbe7bp180e7cjsnf9bd362c2c3c';
     const apiHost = 'genius-song-lyrics1.p.rapidapi.com';
 
     // Event listener for the search button click
