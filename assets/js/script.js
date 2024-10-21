@@ -21,7 +21,7 @@ let selectedFilter = ''; // Holds the filter type based on the selected radio bu
 // Add event listeners to radio buttons to trigger search when clicked
 document.querySelectorAll('input[name="inlineRadioOptions"]').forEach((radio) => {
     radio.addEventListener('change', function () {
-        // Get the data-type value from the selected radio button
+        // Get the custom data-type attribute value from the selected radio button
         selectedFilter = this.getAttribute('data-type');
         searchVideos(false); // Refresh search results, but don't clear the filter
     });

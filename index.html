@@ -17,9 +17,11 @@
     <!-- User input and search button -->
     <div class="container mt-4">
         <h1 class="text-center">Youtube API</h1>
+        <span><a href="audioDB.html">Genius API</a></span>
         <!-- Bootstrap 'form-control' class to group text input and button -->
         <div class="input-group my-4">
-            <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Enter song title" required>
+            <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Enter song title"
+                required>
             <button class="btn btn-primary" id="searchButton">Search</button>
         </div>
     </div>
@@ -30,42 +32,44 @@
             <div class="col-12 d-flex justify-content-center align-items-center bg-light">
                 <!-- Bootstrap inline radio buttons. Used for filtering and refreshing API results -->
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-live" data-type="live-performance"
-                        value="option1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-live"
+                        data-type="live-performance" value="option1">
                     <label class="form-check-label" for="live-performance">Live Performance</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-cover" data-type="cover-version"
-                        value="option2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-cover"
+                        data-type="cover-version" value="option2">
                     <label class="form-check-label" for="inlineRadio2">Cover Version</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-accoustic" data-type="accoustic"
-                        value="option3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-accoustic"
+                        data-type="accoustic" value="option3">
                     <label class="form-check-label" for="inlineRadio3">Accoustic Version</label>
                 </div>
                 <div class="form-check form-check-inline">
-                <span class="pe-2"><strong>Lessons:</strong></span>
+                    <span class="pe-2"><strong>Lessons:</strong></span>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-guitarlesson" data-type="guitar-lesson"
-                        value="option3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-guitarlesson"
+                        data-type="guitar-lesson" value="option3">
                     <label class="form-check-label" for="inlineRadio3">Guitar</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-pianolesson" data-type="piano-lesson"
-                        value="option3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="filter-pianolesson"
+                        data-type="piano-lesson" value="option3">
                     <label class="form-check-label" for="inlineRadio3">Piano</label>
                 </div>
                 <div class="form-check form-check-inline">
-                <a href="javascript:void(0)" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" id="clearFilter">Clear filter</a>
+                    <a href="javascript:void(0)"
+                        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        id="clearFilter">Clear filter</a>
                 </div>
             </div>
         </div>
         <div class="container mt-4">
             <div class="row d-flex justify-content-center mb-2">
-            <div id="videoList" class="col-md-10"></div>
-        </div>
+                <div id="videoList" class="col-md-10"></div>
+            </div>
         </div>
 
         <!-- Bootstrap Modal "fade" class to play videos -->
